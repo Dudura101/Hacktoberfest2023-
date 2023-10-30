@@ -17,6 +17,20 @@ body{
     line-height: 80px;
     font-size: 30px;
 }
+.pulse1{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px;
+    background: #b738bb;
+    color: #fff;
+    border-radius: 50%;
+    text-align: left;
+    line-height: 80px;
+    font-size: 30px;
+}
 .pulse:before,
 .pulse:after{
     content: '';
@@ -24,6 +38,20 @@ body{
     position: absolute;
     border: 50%;
     border: 1px solid #58ea00;
+    left: -20px;
+    right: -20px;
+    top: -20px;
+    bottom: -20px;
+    border-radius: 50%;
+    animation: animate 1.5s linear infinite;
+}
+.pulse1:before,
+.pulse1:after{
+    content: '';
+    display: block;
+    position: absolute;
+    border: 50%;
+    border: 1px solid #b738bb;
     left: -20px;
     right: -20px;
     top: -20px;
